@@ -19,6 +19,7 @@
 document.addEventListener("DOMContentLoaded", () => {
    burgerWork();
    logoAnimation();
+   initBrendsSwiper();
 });
 const body = document.body;
 
@@ -36,4 +37,19 @@ function logoAnimation() {
    setInterval(() => {
       logo.classList.toggle("active");
    }, 2000);
+}
+
+function initBrendsSwiper() {
+   if (!document.querySelector(".home-brends .swiper")) return;
+   let slider = new Swiper(".home-brends .swiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 24,
+      initialSlide: 2,
+      speed: 500,
+      autoplay: {
+         delay: 1000,
+      },
+      loop: true,
+   });
 }
