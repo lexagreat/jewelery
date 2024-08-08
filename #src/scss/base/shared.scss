@@ -129,4 +129,7 @@
    line-height: calc(54 / 45);
    letter-spacing: -0.04em;
    color: $primaryColor;
+   @media (max-width: $tablet) {
+      font-size: 25px;
+   }
 }
