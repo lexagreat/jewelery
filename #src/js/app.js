@@ -18,6 +18,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
    burgerWork();
+   logoAnimation();
 });
 const body = document.body;
 
@@ -29,4 +30,10 @@ function burgerWork() {
       menu.classList.toggle("active");
       body.classList.toggle("lock");
    });
+}
+function logoAnimation() {
+   const logo = document.querySelector(".header__logo");
+   setInterval(() => {
+      logo.classList.toggle("active");
+   }, 2000);
 }
