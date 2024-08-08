@@ -1,0 +1,119 @@
+.home-partner {
+   background-color: #f4f4f4;
+   &__wrapper {
+      padding-top: 38px;
+      padding-bottom: 44px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+   }
+   &__title {
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 55px;
+   }
+   &__subtitle {
+      font-family: $tenorFont;
+      font-size: 20px;
+      line-height: calc(27 / 20);
+      letter-spacing: -0.02em;
+      max-width: 275px;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+   }
+
+   &__upper {
+      flex: 0 0 326px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 8px;
+      flex-direction: column;
+      gap: 15px;
+      border-bottom: 1px solid $goldColor;
+   }
+
+   &__image {
+      flex: unset;
+      img {
+         width: 232px;
+         height: 247px;
+      }
+      &::after {
+         width: 232px;
+         height: 247px;
+      }
+   }
+
+   &__footer {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 43px;
+      flex: 1;
+      p {
+         flex: 1;
+         font-size: 18px;
+         line-height: calc(24 / 18);
+         letter-spacing: -0.02em;
+      }
+   }
+   .btn {
+      width: fit-content;
+      width: 245px;
+      height: 70px;
+      padding: 0;
+      font-size: 20px;
+      @media (max-width: $tablet) {
+         height: 55px;
+         gap: 25px;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__wrapper {
+         align-items: flex-start;
+         padding-top: 24px;
+         padding-bottom: 55px;
+      }
+      &__list {
+         margin: 0 auto;
+         grid-template-columns: 1fr;
+         gap: 20px;
+      }
+      &__upper {
+         border: 0;
+         position: relative;
+         &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 150px;
+            height: 1px;
+            background-color: $goldColor;
+            bottom: 0;
+            left: 50%;
+            translate: -50%;
+         }
+      }
+      &__item {
+         border-bottom: 1px solid $goldColor;
+         padding-bottom: 22px;
+         max-width: 305px;
+      }
+      &__footer {
+         p {
+            font-size: 16px;
+         }
+      }
+   }
+}
