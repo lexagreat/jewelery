@@ -1,0 +1,35 @@
+.breadcrumbs {
+   margin-bottom: 25px;
+   margin-top: 60px;
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      a {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         font-size: 15px;
+         color: #33333366;
+         &::after {
+            content: ">";
+            font-size: 15px;
+            color: #33333366;
+         }
+         @media (max-width: $tablet) {
+            font-size: 12px;
+            &::after {
+               font-size: 12px;
+            }
+         }
+      }
+      li:last-child {
+         a {
+            color: $primaryColor;
+            &::after {
+               display: none;
+            }
+         }
+      }
+   }
+}

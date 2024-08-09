@@ -1,0 +1,119 @@
+.members-reason {
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      align-items: center;
+      margin-bottom: 70px;
+      &::after {
+         content: "";
+         display: block;
+         width: 484px;
+         height: 32px;
+         background: url(../img/icons/border.svg) center / cover no-repeat;
+         margin-top: 35px;
+      }
+   }
+
+   &__title {
+      display: flex;
+      text-transform: unset;
+      gap: 20px;
+      &::before {
+         content: "";
+         display: block;
+         width: 39px;
+         height: 32px;
+         flex: 0 0 39px;
+         background: url(../img/icons/stars.svg) center / cover no-repeat;
+         translate: 0 5px;
+      }
+   }
+
+   &__description {
+      font-size: 20px;
+      line-height: calc(27 / 20);
+      color: #000;
+      display: flex;
+      gap: 20px;
+      &::before {
+         content: "";
+         display: block;
+         width: 54px;
+         flex: 0 0 54px;
+         background-color: #efe8da;
+      }
+   }
+
+   &__list {
+      margin-top: 40px;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      row-gap: 62px;
+      & > li {
+         flex: 0 0 calc((100% / 3) - (70px / 3));
+         position: relative;
+         span {
+            font-size: 25px;
+         }
+         p {
+            font-size: 18px;
+            &::before {
+               // width: calc(100% - 110px);
+               width: 270px;
+               @media (max-width: $tablet) {
+                  width: 237px;
+               }
+            }
+         }
+      }
+   }
+
+   &__icon {
+      width: 55px;
+      height: 55px;
+      flex: 0 0 55px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      translate: -50% -80%;
+      border: 1px solid $goldColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      img {
+         width: unset;
+         height: unset;
+         max-width: 80%;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__title {
+         width: 100%;
+         text-align: left;
+         &::before {
+            display: none;
+         }
+      }
+      &__wrapper {
+         &::after {
+            display: none;
+         }
+      }
+      &__description {
+         &::before {
+            display: none;
+         }
+      }
+      &__list {
+         row-gap: 60px;
+         flex-direction: column;
+         & > li {
+            flex: unset;
+         }
+      }
+   }
+}
