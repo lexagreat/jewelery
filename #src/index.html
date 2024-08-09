@@ -113,10 +113,15 @@
                         трендах. БИЖУФЕСТ для тех, кто ценит уникальные аксессуары и любит выбирать из лучшего!</div>
                      <div class="home-about__video">
 
-                        <iframe width="720" height="405"
+                        <!-- <iframe width="720" height="405"
                            src="https://rutube.ru/play/embed/754bed022e9435590a7a73bf95b6be60" frameBorder="0"
                            allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
-                           allowFullScreen></iframe>
+                           allowFullScreen></iframe> -->
+
+                        <iframe width="878" height="494" src="https://www.youtube.com/embed/9yZqW3t_Hl0"
+                           title="Международный маркет бижутерии и аксессуаров приглашает!" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                      </div>
                   </div>
@@ -419,7 +424,49 @@
                            </a>
                         </div>
                      </div>
-                     <div class="home-time__place"></div>
+                     <div class="home-time__place place-card">
+                        <h4 class="place-card__title">Место проведения</h4>
+                        <span class="place-card__description">ТВК "Тишинка", Тишинская площадь д.1</span>
+                        <div class="place-card__main">
+                           <span class="place-card__span">Построить маршрут с помощью</span>
+                           <ul class="place-card__list">
+                              <li>
+                                 <input checked type="radio" name="placeTab" id="placeTab1" value="placeTab1">
+                                 <label for="placeTab1">
+                                    <span>Я</span>
+                                    <span>Yandex Maps</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="radio" name="placeTab" id="placeTab2" value="placeTab2">
+                                 <label for="placeTab2">
+                                    <span>G</span>
+                                    <span>Google Maps</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="radio" name="placeTab" id="placeTab3" value="placeTab3">
+                                 <label for="placeTab3">
+                                    <span>2</span>
+                                    <span>2GIS</span>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul>
+                              <li class="place-card__content active" data-tab="placeTab1">
+                                 <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae104d9a26a163e07f69e894531d8c43a5619f32a16ab53054288e400899e28b6&amp;source=constructor"
+                                    width="650" height="250" frameborder="0"></iframe>
+                              </li>
+                              <li class="place-card__content" data-tab="placeTab2">
+                                 google map
+                              </li>
+                              <li class="place-card__content" data-tab="placeTab3">
+                                 2 2GIS
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>

@@ -1445,6 +1445,115 @@ img {
   color: #333333;
 }
 
+.place-card__title {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 35px;
+  line-height: 1.0857142857;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.place-card__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.place-card__description::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  background: url(../img/icons/address.svg) center/cover no-repeat;
+}
+
+.place-card__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place-card__span {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.place-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+}
+
+.place-card__list input {
+  display: none;
+}
+
+.place-card__list label {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 11px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.place-card__list input:checked + label {
+  border-color: #917f59;
+  color: #917f59;
+}
+
+.place-card__content {
+  display: none;
+}
+
+.place-card__content iframe {
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 8px 30px 0px #55555533;
+          box-shadow: 0px 8px 30px 0px #55555533;
+}
+
+.place-card__content.active {
+  display: block;
+}
+
 @media (max-width: 1440px) {
   .hero__circle {
     width: calc(300px + 226 * (100vw - 1024px) / 416);
@@ -1456,6 +1565,10 @@ img {
 
   .home-hero__bg {
     translate: 30%;
+  }
+
+  .place-card__content iframe {
+    max-width: calc(450px + 200 * (100vw - 1024px) / 416);
   }
 }
 
@@ -1932,6 +2045,10 @@ img {
     display: none;
   }
 
+  .home-gallery__wrapper {
+    padding: 80px 0;
+  }
+
   .home-gallery__list {
     -ms-grid-columns: (195px)[5];
     grid-template-columns: repeat(5, 195px);
@@ -1945,6 +2062,94 @@ img {
 
   .home-gallery__list:-webkit-scrollbar {
     display: none;
+  }
+
+  .home-time__wrapper {
+    padding-top: 0;
+    gap: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .home-time__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .home-schedule {
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 45px;
+  }
+
+  .home-schedule .bordered {
+    border: 0;
+  }
+
+  .home-schedule .bordered .home-schedule__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .home-schedule .bordered .home-schedule__item span:last-child {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .home-schedule__list {
+    width: 100%;
+  }
+
+  .home-schedule__item {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .place-card__title {
+    text-align: left;
+  }
+
+  .place-card__main {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .place-card__list {
+    gap: 10px;
+  }
+
+  .place-card__list label {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 43px;
+  }
+
+  .place-card__list label span:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .place-card__list label span:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .place-card__content iframe {
+    margin-left: -10px;
+    margin-right: -10px;
+    max-width: 100vw;
   }
 }
 

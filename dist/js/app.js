@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
    burgerWork();
    logoAnimation();
    initBrendsSwiper();
+   tabs(".place-card__list input", ".place-card__content");
 });
 const body = document.body;
 
@@ -52,4 +53,25 @@ function initBrendsSwiper() {
       },
       loop: true,
    });
+}
+
+function tabs(linkSelector, contentSelector) {
+   const inputs = document.querySelectorAll(linkSelector);
+   const contents = document.querySelectorAll(contentSelector);
+   let value;
+   if (inputs.length) {
+      inputs.forEach((item) => {
+         item.addEventListener("change", () => {
+            if (item.checked) {
+               value = item.value;
+            }
+            contents.forEach((item) => {
+               item.classList.remove("active");
+               if (item.getAttribute("data-tab") == value) {
+                  item.classList.add("active");
+               }
+            });
+         });
+      });
+   }
 }
