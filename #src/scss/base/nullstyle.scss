@@ -116,3 +116,7 @@ img {
       display: none;
    }
 }
+
+.collapse:not(.collapse_show) {
+   display: none;
+}
