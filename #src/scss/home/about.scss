@@ -190,7 +190,9 @@
       display: flex;
       align-items: flex-end;
       position: relative;
-      iframe {
+      iframe,
+      video,
+      img {
          width: 615px;
          height: 433px;
          border-radius: 100px 0 100px 0;
@@ -236,7 +238,9 @@
          flex: unset;
          width: 100%;
          height: calc(240px + 200 * ((100vw - 320px) / (1024 - 320)));
-         iframe {
+         iframe,
+         video,
+         img {
             width: calc(100% - 20px);
             height: calc(240px + 200 * ((100vw - 320px) / (1024 - 320)));
          }
