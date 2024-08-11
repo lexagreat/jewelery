@@ -1,0 +1,138 @@
+.smi-reviews {
+   &__wrapper {
+      padding-bottom: 90px;
+      margin-bottom: 72px;
+      position: relative;
+      &::after {
+         content: "";
+         display: block;
+         width: 484px;
+         height: 29px;
+         background: url(../img/icons/border.svg) center / cover no-repeat;
+         position: absolute;
+         top: 100%;
+         left: 50%;
+         translate: -50%;
+      }
+   }
+
+   &__title {
+      margin-bottom: 45px;
+      text-align: center;
+      justify-content: center;
+   }
+
+   &__main {
+   }
+   &__nav {
+      margin-top: 25px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      @media (max-width: $tablet) {
+         margin-top: 30px;
+      }
+      button {
+         width: 50px;
+         height: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         border: 1px solid $primaryColor;
+         cursor: pointer;
+         img {
+            width: 15px;
+            height: unset;
+         }
+      }
+      .next {
+         rotate: 180deg;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__title {
+         justify-content: flex-start;
+         margin-bottom: 25px;
+      }
+      &__wrapper {
+         padding-bottom: 0;
+         margin-bottom: 80px;
+         &::after {
+            display: none;
+         }
+      }
+   }
+}
+.smi-review {
+   padding: 28px 22px;
+   background-color: #f4f4f4;
+   border-radius: 20px;
+   &__header {
+      font-family: $tenorFont;
+      font-size: 18px;
+      line-height: calc(21 / 18);
+      letter-spacing: -0.02em;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      position: relative;
+      &::after {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 209px;
+         height: 1px;
+         background-color: $goldColor;
+      }
+   }
+
+   &__main {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+      letter-spacing: -0.02em;
+      padding-bottom: 84px;
+   }
+
+   &__footer {
+      padding-top: 9px;
+      position: relative;
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 209px;
+         height: 1px;
+         background-color: $goldColor;
+      }
+      a {
+         font-family: $tenorFont;
+         font-size: 16px;
+         line-height: calc(22 / 16);
+         letter-spacing: -0.02em;
+         color: $goldColor;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__header {
+         font-size: 16px;
+         &::after {
+            width: 185px;
+         }
+      }
+      &__main {
+         font-size: 12px;
+      }
+      &__footer {
+         &::before {
+            width: 185px;
+         }
+         a {
+            font-size: 14px;
+         }
+      }
+   }
+}

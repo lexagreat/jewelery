@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
    initBrendsSwiper();
    tabs(".place-card__list input", ".place-card__content");
    membersSpoiler();
+   tabs(".smi-tabs__list input", ".smi-tabs__block");
+   initReviewsSwiper();
 });
 const body = document.body;
 
@@ -55,7 +57,27 @@ function initBrendsSwiper() {
       loop: true,
    });
 }
-
+function initReviewsSwiper() {
+   if (!document.querySelector(".smi-reviews .swiper")) return;
+   let slider = new Swiper(".smi-reviews .swiper", {
+      spaceBetween: 43,
+      speed: 500,
+      // autoplay: {
+      //    delay: 1000,
+      // },
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+         prevEl: ".smi-reviews__nav .prev",
+         nextEl: ".smi-reviews__nav .next",
+      },
+      breakpoints: {
+         1024: {
+            slidesPerView: 3,
+         },
+      },
+   });
+}
 function tabs(linkSelector, contentSelector) {
    const inputs = document.querySelectorAll(linkSelector);
    const contents = document.querySelectorAll(contentSelector);

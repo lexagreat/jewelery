@@ -1,0 +1,49 @@
+.smi-hero {
+   &__title {
+      font-size: 55px;
+   }
+
+   &__subtitle {
+      color: #000;
+      font-size: 25px;
+      line-height: calc(30 / 25);
+      letter-spacing: -0.02em;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   &__video {
+      iframe,
+      img,
+      video,
+      &::after {
+         width: 592px;
+         height: 416px;
+         @media (max-width: 1250px) {
+            width: calc(350px + 242 * ((100vw - 1024px) / (1250 - 1024)));
+         }
+      }
+      @media (max-width: $tablet) {
+         display: block;
+         height: unset;
+         iframe,
+         img,
+         video {
+            width: 100vw;
+            margin-left: -10px;
+            height: calc(214 / 375 * 100vw);
+            border-radius: 0;
+         }
+      }
+   }
+   @media (max-width: $tablet) {
+      padding-bottom: 0;
+      &__title {
+         font-size: 30px;
+      }
+      &__subtitle {
+         font-size: 14px;
+      }
+   }
+}
