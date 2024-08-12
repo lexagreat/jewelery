@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
    membersSpoiler();
    tabs(".smi-tabs__list input", ".smi-tabs__block");
    initReviewsSwiper();
+   initBlogSwiper();
 });
 const body = document.body;
 
@@ -70,6 +71,27 @@ function initReviewsSwiper() {
       navigation: {
          prevEl: ".smi-reviews__nav .prev",
          nextEl: ".smi-reviews__nav .next",
+      },
+      breakpoints: {
+         1024: {
+            slidesPerView: 3,
+         },
+      },
+   });
+}
+function initBlogSwiper() {
+   if (!document.querySelector(".blog-slider .swiper")) return;
+   let slider = new Swiper(".blog-slider .swiper", {
+      spaceBetween: 43,
+      speed: 500,
+      // autoplay: {
+      //    delay: 1000,
+      // },
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+         prevEl: ".blog-slider .smi-reviews__nav .prev",
+         nextEl: ".blog-slider .smi-reviews__nav .next",
       },
       breakpoints: {
          1024: {
