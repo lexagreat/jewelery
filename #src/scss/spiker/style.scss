@@ -1,0 +1,131 @@
+.spiker-hero {
+   &__title {
+      font-size: 55px;
+      text-transform: unset;
+      &::after {
+         display: none;
+      }
+   }
+}
+
+.spiker-why {
+   margin-top: 70px;
+   margin-bottom: 120px;
+   padding-top: 70px;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      translate: -50%;
+      display: block;
+      width: 484px;
+      height: 32px;
+      background: url(../img/icons/border.svg) center / cover no-repeat;
+   }
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+      text-align: center;
+   }
+
+   &__list {
+      margin-top: 35px;
+      margin-bottom: 45px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      li {
+         padding-top: 30px;
+         padding-bottom: 20px;
+         padding-left: 25px;
+         padding-right: 25px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         position: relative;
+         text-align: center;
+         background-color: #f4f4f4;
+         box-shadow: 0px 8px 30px 0px #55555533;
+         border-radius: 20px;
+         .icon {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            translate: -50% -50%;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid $goldColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+               max-width: 60%;
+               height: unset;
+            }
+         }
+         span {
+            font-family: $tenorFont;
+            font-size: 22px;
+            line-height: calc(26 / 22);
+            letter-spacing: -0.04em;
+            color: $goldColor;
+            display: flex;
+            padding-bottom: 13px;
+            margin-bottom: 17px;
+            border-bottom: 1px solid $goldColor;
+         }
+         p {
+            font-size: 16px;
+            line-height: calc(19 / 16);
+            letter-spacing: -0.04em;
+         }
+      }
+   }
+   .btn {
+      height: 70px;
+      width: 279px;
+      font-size: 20px;
+      &__arrow {
+         width: 41px;
+         height: 41px;
+         flex: 0 0 41px;
+         svg {
+            width: 22px;
+            height: 20px;
+         }
+      }
+   }
+   @media (max-width: $tablet) {
+      margin-bottom: 80px;
+      margin-top: 50px;
+      padding-top: 0;
+      &::before {
+         display: none;
+      }
+      &__title {
+         width: 100%;
+         text-align: left;
+      }
+      &__list {
+         width: 100%;
+         margin-top: 53px;
+         margin-bottom: 35px;
+         grid-template-columns: 1fr;
+         li {
+            width: 100%;
+         }
+      }
+      .btn {
+         height: 55px;
+         width: 293px;
+         margin: 0 auto;
+      }
+   }
+}
