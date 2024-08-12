@@ -4207,6 +4207,31 @@ img {
      object-fit: contain;
 }
 
+.document-page__wrapper {
+  margin-top: 45px;
+  margin-bottom: 120px;
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  letter-spacing: -0.04em;
+}
+
+.document-page__wrapper > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.document-page__wrapper b {
+  font-weight: 600;
+}
+
 @media (max-width: 1600px) {
   .members-hero__wrapper {
     margin-right: 0;
@@ -5801,6 +5826,12 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 20px;
             flex: 0 0 20px;
+  }
+
+  .document-page__wrapper {
+    margin-bottom: 80px;
+    margin-top: 0;
+    font-size: 12px;
   }
 }
 

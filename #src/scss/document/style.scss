@@ -1,0 +1,25 @@
+.document-page {
+   &__wrapper {
+      margin-top: 45px;
+      margin-bottom: 120px;
+      color: $primaryColor;
+      font-size: 18px;
+      line-height: calc(21 / 18);
+      letter-spacing: -0.04em;
+      & > ul {
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+
+         margin-top: 32px;
+      }
+      b {
+         font-weight: 600;
+      }
+      @media (max-width: $tablet) {
+         margin-bottom: 80px;
+         margin-top: 0;
+         font-size: 12px;
+      }
+   }
+}
