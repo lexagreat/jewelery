@@ -1,0 +1,37 @@
+.press-page {
+   margin-bottom: 120px;
+   margin-top: 45px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 45px;
+   }
+
+   &__title {
+      text-align: center;
+      font-family: $tenorFont;
+      font-size: 45px;
+      line-height: calc(54 / 45);
+      letter-spacing: -0.02em;
+   }
+
+   &__description {
+      font-size: 18px;
+      line-height: calc(21.6 / 18);
+      letter-spacing: -0.02em;
+   }
+   @media (max-width: $tablet) {
+      margin-bottom: 80px;
+      margin-top: 50px;
+      &__wrapper {
+         gap: 25px;
+      }
+      &__title {
+         font-size: 25px;
+      }
+      &__description {
+         font-size: 12px;
+      }
+   }
+}
