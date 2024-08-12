@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Контакты",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="breadcrumbs">
+            <div class="container">
+               <ul class="breadcrumbs__list">
+                  <li>
+                     <a href="index.html">Главная</a>
+                  </li>
+                  <li>
+                     <a href="blog.html">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="contacts-page">
+            <div class="container">
+               <div class="contacts-page__wrapper">
+                  <div class="contacts-page__block">
+                     <h2 class="contacts-page__title">Организатор</h2>
+                     <div class="contacts-page__description">Выставочная компания «НОК» организует выставки-продажи в
+                        Москве уже более 14 лет.
+                        На нашем счету 34 маркета, а это: больше 3 тысяч участников, 4 тысячи посетителей на каждой
+                        выставке, в числе которых не только потребители, но и представители b2b. 
+                        Наш проект выставка-продажа «Бижутерия от винтажа до наших дней» за 14 лет приобрел обширную
+                        аудиторию и снискал популярность у селебрити и медийных персон.
+                        За долгие годы работы в сфере украшений и аксессуаров мы собрали внушительную, постоянно
+                        пополняемую базу контактов, которая и формирует целевую аудиторию наших мероприятий.  </div>
+                  </div>
+                  <div class="contacts-page__block">
+                     <h2 class="contacts-page__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                     <div class="contacts-page__main">
+                        <div class="contacts-page__card contacts-card">
+                           <div class="contacts-card__header">
+                              <div class="contacts-card__image">
+                                 <img src="img/contacts/avatar.png" alt="">
+                              </div>
+                              <span class="contacts-card__name">Светлана Смирнова</span>
+                           </div>
+                           <div class="contacts-card__main">
+                              <span class="contacts-card__rang">Куратор проекта "Бижуфест"</span>
+                              <ul class="contacts-card__list">
+                                 <li>
+                                    <a href="tel:+7 (925) 300-86-85">
+                                       <img src="img/icons/rent-phone.svg" alt="">
+                                       <span>+7 (925) 300-86-85</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="mailto:svetlana@bijou-moscow.com">
+                                       <img src="img/icons/rent-email.svg" alt="">
+                                       <span>svetlana@bijou-moscow.com</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <ul class="contacts-page__list">
+                           <li class="contacts-item">
+                              <ul class="contacts-item__list">
+                                 <li>
+                                    <a href="tel:+7 (925) 300-86-85">
+                                       <img src="img/icons/contacts-page-phone.svg" alt="">
+                                       <span>+7 (925) 300-86-85</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="mailto:info@bijou-moscow.com">
+                                       <img src="img/icons/contacts-page-email.svg" alt="">
+                                       <span>info@bijou-moscow.com</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="contacts-item">
+                              <ul>
+                                 <li>
+                                    <img src="img/icons/contacts-page-address.svg" alt="">
+                                    <p>Наш офис находится в здании «Центрального дома актера имения А.А. Яблочкиной».
+                                       Москва, ул. Арбат д.35, 6 этаж, 641 офис.</p>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="contacts-item">
+                              <ul>
+                                 <li>
+                                    <img src="img/icons/contacts-page-clock.svg" alt="">
+                                    <p>Часы работы:
+                                       по предварительному согласованию. Просьба перед приездом связаться с нами.</p>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
