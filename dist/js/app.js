@@ -17,6 +17,7 @@
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
+   new WOW().init();
    burgerWork();
    logoAnimation();
    initBrendsSwiper();
