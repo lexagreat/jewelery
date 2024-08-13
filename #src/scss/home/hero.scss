@@ -81,9 +81,10 @@
          }
       }
    }
-   @media (max-width: 1440px) {
+   @media (max-width: 1600px) {
       &__bg {
-         translate: 30%;
+         // translate: 30%;
+         width: calc(300px + 473 * ((100vw - 1024px) / (1600 - 1024)));
       }
    }
    @media (max-width: $tablet) {

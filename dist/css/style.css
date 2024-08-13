@@ -7578,6 +7578,10 @@ body.lock {
 }
 
 @media (max-width: 1600px) {
+  .home-hero__bg {
+    width: calc(300px + 473 * (100vw - 1024px) / 576);
+  }
+
   .members-hero__wrapper {
     margin-right: 0;
     gap: 12px;
@@ -7595,10 +7599,6 @@ body.lock {
 
   .place-section .place-card__main ul iframe {
     max-width: 100%;
-  }
-
-  .home-hero__bg {
-    translate: 30%;
   }
 
   .place-card__content iframe {
