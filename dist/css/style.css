@@ -4084,6 +4084,11 @@ body.lock {
   gap: 20px;
 }
 
+.home-about__card p {
+  font-size: 18px;
+  line-height: 1.3888888889;
+}
+
 .home-about__subtitle {
   font-family: "Tenor Sans", sans-serif;
   font-size: 35px;
@@ -7879,11 +7884,11 @@ body.lock {
   }
 
   .footer-item__upper span {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .footer-item p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .footer-form__row {
@@ -7982,6 +7987,11 @@ body.lock {
 
   .home-hero {
     margin-top: 0;
+  }
+
+  .home-hero__description p:nth-child(2)::before {
+    width: 24px;
+    height: 24px;
   }
 
   .home-hero__wrapper {
@@ -8149,7 +8159,7 @@ body.lock {
   .home-invite__text {
     gap: 16px;
     margin-top: 0;
-    font-size: 14px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
@@ -8163,7 +8173,7 @@ body.lock {
   }
 
   .home-invite__title {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .home-invite__title::before {
@@ -8283,6 +8293,11 @@ body.lock {
     bottom: 0;
     left: 50%;
     translate: -50%;
+  }
+
+  .home-partner__subtitle {
+    font-size: 25px;
+    font-weight: 600;
   }
 
   .home-partner__item {
@@ -9412,8 +9427,8 @@ body.lock {
 
   .home-about__wrapper::before {
     background: url(../img/icons/home-about-mobile.svg) center/cover no-repeat;
-    width: 95px;
-    height: 138px;
+    width: 60px;
+    height: 66px;
     left: -10px;
     top: -2px;
     translate: 0;

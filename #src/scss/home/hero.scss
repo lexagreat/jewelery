@@ -54,6 +54,10 @@
                height: 40px;
                background: url(../img/icons/address.svg) center / cover
                   no-repeat;
+               @media (max-width: $tablet) {
+                  width: 24px;
+                  height: 24px;
+               }
             }
          }
       }

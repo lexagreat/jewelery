@@ -116,6 +116,10 @@
             translate: -50%;
          }
       }
+      &__subtitle {
+         font-size: 25px;
+         font-weight: 600;
+      }
       &__item {
          border-bottom: 1px solid $goldColor;
          padding-bottom: 22px;
