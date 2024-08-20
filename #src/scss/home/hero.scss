@@ -145,4 +145,18 @@
          }
       }
    }
+   @media (max-height: 900px) and (min-width: 1025px) {
+      &__title {
+         font-size: 80px;
+         line-height: 1.1;
+      }
+      &__description {
+         p:nth-child(1) {
+            font-size: 45px;
+         }
+         p:nth-child(2) {
+            font-size: 40px;
+         }
+      }
+   }
 }

@@ -7582,6 +7582,21 @@ body.lock {
   font-size: 16px;
 }
 
+@media (max-height: 900px) and (min-width: 1025px) {
+  .home-hero__title {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+
+  .home-hero__description p:nth-child(1) {
+    font-size: 45px;
+  }
+
+  .home-hero__description p:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 1600px) {
   .home-hero__bg {
     width: calc(300px + 473 * (100vw - 1024px) / 576);
@@ -7864,7 +7879,7 @@ body.lock {
   }
 
   .footer__link {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .footer__logo {
@@ -7888,7 +7903,7 @@ body.lock {
   }
 
   .footer-item p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footer-form__row {
@@ -8159,7 +8174,7 @@ body.lock {
   .home-invite__text {
     gap: 16px;
     margin-top: 0;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
 
@@ -9398,6 +9413,13 @@ body.lock {
 }
 
 @media (max-width: 568px) {
+  .footer__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .home-about__block::after {
     translate: -50% 18px;
     width: 30px;
@@ -9418,6 +9440,10 @@ body.lock {
     padding-bottom: 22px;
     padding-left: 25px;
     padding-right: 10px;
+  }
+
+  .home-about__card p {
+    font-size: 16px;
   }
 
   .home-about__wrapper {
