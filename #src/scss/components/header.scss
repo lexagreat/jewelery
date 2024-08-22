@@ -9,7 +9,7 @@
       display: flex;
       align-items: center;
       position: relative;
-      height: 72px;
+      height: 102px;
       border-bottom: 1px solid #f4f4f4;
       margin-left: -85px;
       margin-right: -85px;
@@ -50,8 +50,8 @@
       top: 50%;
       left: 50%;
       translate: -50% -50%;
-      width: 135px;
-      flex: 0 0 135px;
+      width: 192px;
+      flex: 0 0 192px;
       height: 60px;
       img {
          position: absolute;
@@ -102,9 +102,14 @@
          padding: 0 23px;
       }
       &__logo {
+         width: 135px;
+         flex: 0 0 135px;
          margin-top: 10px;
+         height: 45px;
+         margin-top: 0;
          img {
             height: 45px;
+            object-fit: contain;
          }
       }
       &__menu {

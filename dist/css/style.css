@@ -167,7 +167,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-top: 72px;
+  padding-top: 102px;
 }
 
 .btn {
@@ -3050,7 +3050,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 72px;
+  height: 102px;
   border-bottom: 1px solid #f4f4f4;
   margin-left: -85px;
   margin-right: -85px;
@@ -3090,10 +3090,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 135px;
+  width: 192px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 135px;
-          flex: 0 0 135px;
+      -ms-flex: 0 0 192px;
+          flex: 0 0 192px;
   height: 60px;
 }
 
@@ -3882,7 +3882,6 @@ body.lock {
 
 .home-hero {
   background-color: #f4f4f4;
-  margin-top: 32px;
 }
 
 .home-hero .hero__circle {
@@ -7697,11 +7696,19 @@ body.lock {
   }
 
   .header__logo {
+    width: 135px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 135px;
+            flex: 0 0 135px;
     margin-top: 10px;
+    height: 45px;
+    margin-top: 0;
   }
 
   .header__logo img {
     height: 45px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .header__menu {
