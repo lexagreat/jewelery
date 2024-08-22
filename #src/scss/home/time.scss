@@ -24,6 +24,9 @@
    }
 
    &__place {
+      .place-card__description {
+         justify-content: center;
+      }
    }
    @media (max-width: $tablet) {
       &__wrapper {

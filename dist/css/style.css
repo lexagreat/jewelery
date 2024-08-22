@@ -4407,6 +4407,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
@@ -4800,6 +4803,12 @@ body.lock {
   border-radius: 20px;
   -webkit-box-shadow: 0px 8px 30px 0px #55555533;
           box-shadow: 0px 8px 30px 0px #55555533;
+}
+
+.home-time__place .place-card__description {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-schedule {
@@ -7582,7 +7591,7 @@ body.lock {
   font-size: 16px;
 }
 
-@media (max-height: 900px) and (min-width: 1025px) {
+@media (max-height: 1000px) and (min-width: 1025px) {
   .home-hero__title {
     font-size: 80px;
     line-height: 1.1;
