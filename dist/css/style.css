@@ -7605,6 +7605,44 @@ body.lock {
   }
 }
 
+@media (max-height: 700px) and (min-width: 1025px) {
+  .home-hero__title {
+    font-size: 65px;
+    line-height: 1.1;
+  }
+
+  .home-hero__description p:nth-child(1) {
+    font-size: 35px;
+  }
+
+  .home-hero__description p:nth-child(2) {
+    font-size: 30px;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 1025px) {
+  .home-hero__title {
+    font-size: 55px;
+    line-height: 1.1;
+  }
+
+  .home-hero__description {
+    margin-bottom: 32px;
+  }
+
+  .home-hero__description p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .home-hero__description p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .home-hero .btn {
+    height: 50px;
+  }
+}
+
 @media (max-width: 1600px) {
   .home-hero__bg {
     width: calc(300px + 473 * (100vw - 1024px) / 576);
