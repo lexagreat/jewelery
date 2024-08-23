@@ -151,6 +151,7 @@ img {
 }
 
 .wrapper {
+  zoom: 0.9;
   font-family: "Manrope", sans-serif;
   min-height: 100vh;
   display: -webkit-box;
