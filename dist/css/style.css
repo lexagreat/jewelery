@@ -8242,7 +8242,7 @@ body.lock {
   .home-invite__text {
     gap: 16px;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
 
@@ -8266,6 +8266,7 @@ body.lock {
   .home-invite .btn {
     height: 55px;
     font-size: 20px;
+    margin: 0 auto;
   }
 
   .home-adv__wrapper {
@@ -8325,6 +8326,9 @@ body.lock {
 
   .home-adv__text {
     gap: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .home-adv__text p {
@@ -8380,7 +8384,6 @@ body.lock {
 
   .home-partner__subtitle {
     font-size: 25px;
-    font-weight: 600;
   }
 
   .home-partner__item {
