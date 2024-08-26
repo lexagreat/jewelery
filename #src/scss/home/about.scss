@@ -258,6 +258,10 @@
    }
    @media (max-width: $mobile) {
       overflow: hidden;
+      &__title {
+         padding-left: 48px;
+         padding-right: 48px;
+      }
       &__subtitle {
          font-size: 25px;
          gap: 6px;
@@ -277,8 +281,8 @@
          &::before {
             background: url(../img/icons/home-about-mobile.svg) center / cover
                no-repeat;
-            width: 60px;
-            height: 66px;
+            width: 80px;
+            height: 88px;
             left: -10px;
             top: -2px;
             translate: 0;

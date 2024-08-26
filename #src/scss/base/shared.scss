@@ -5,7 +5,7 @@
    margin: 0 auto;
 }
 .wrapper {
-   zoom: 0.9;
+   // zoom: 0.9;
    font-family: $manropeFont;
    min-height: 100vh;
    display: flex;
@@ -132,5 +132,7 @@
    color: $primaryColor;
    @media (max-width: $tablet) {
       font-size: 25px;
+      width: 100%;
+      text-align: left;
    }
 }

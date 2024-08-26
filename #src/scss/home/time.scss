@@ -26,6 +26,12 @@
    &__place {
       .place-card__description {
          justify-content: center;
+         @media (max-width: $tablet) {
+            justify-content: flex-start;
+            br {
+               display: block;
+            }
+         }
       }
    }
    @media (max-width: $tablet) {
@@ -161,6 +167,9 @@
       align-items: center;
       gap: 15px;
       font-size: 20px;
+      br {
+         display: none;
+      }
       &::before {
          content: "";
          display: block;

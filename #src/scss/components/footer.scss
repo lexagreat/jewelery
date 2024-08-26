@@ -192,10 +192,10 @@
       }
    }
    @media (max-width: $mobile) {
-      &__list {
-         display: grid;
-         grid-template-columns: 1fr;
-      }
+      // &__list {
+      //    display: grid;
+      //    grid-template-columns: 1fr;
+      // }
    }
 }
 .footer-item {
@@ -293,6 +293,7 @@
          color: $primaryColor;
          &::placeholder {
             color: #b9b9b9;
+            font-size: 16px;
          }
       }
       button {
@@ -336,11 +337,12 @@
             flex: unset;
             width: 100%;
             height: 46px;
-            font-size: 10px;
+            font-size: 14px;
          }
          button {
             flex: unset;
-            width: calc(100% - 64px);
+            // width: calc(100% - 64px);
+            width: 245px;
          }
       }
       p {

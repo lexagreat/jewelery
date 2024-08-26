@@ -20,7 +20,7 @@
                }
                @media (max-width: $tablet) {
                   max-width: unset;
-                  width: 100vw;
+                  width: calc(320px + 704 * ((100vw - 320px) / (1024 - 320)));
                   border-radius: 0;
                }
             }

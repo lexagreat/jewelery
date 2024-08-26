@@ -67,6 +67,11 @@
          opacity: 1;
       }
    }
+   @media (max-width: $tablet) {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+   }
    @media (max-width: $mobile) {
       &__wrapper {
          padding-top: 80px;
