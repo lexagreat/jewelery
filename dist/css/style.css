@@ -8004,6 +8004,8 @@ body.lock {
         -ms-flex: unset;
             flex: unset;
     width: 245px;
+    font-size: 20px;
+    font-family: Manrope, sans-serif;
   }
 
   .footer-form p {
